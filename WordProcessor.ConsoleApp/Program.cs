@@ -10,6 +10,7 @@ try
 {
     Host.CreateDefaultBuilder()
         .ConfigureServices(ConfigureServices)
+        .ConfigureServices(services => services.AddTransient<App>())
         .Build()
         .Services
         .GetRequiredService<App>()
@@ -22,6 +23,6 @@ catch (Exception ex)
 
 static void ConfigureServices(HostBuilderContext context, IServiceCollection services)
 {
-    services.AddSingleton<IDictionaryRepository, DictionaryRepository>();
-    services.AddDbContext<WordProcessorContext>(option => option.UseSqlServer("MS SQLServerConnectionString"));
+    services.AddTransient<IDictionaryRepository, DictionaryRepository>();
+    services.AddDbContext<WordProcessorContext>(option => option.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=WordProcessorDB;Trusted_Connection=True;"));//пытался добавить строку подключения в App.config но не вышло, пришлось на прямую прописать
 }

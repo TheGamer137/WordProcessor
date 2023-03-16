@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "erSj+WJFKmJoY+JeAiMsZc+aldYi/Qw6VWzIZRhLkL/OQU8279q5czxrg00DoD9Y/5T+7RHuxZlIwjVlbMyPEw==",
+  "dgSpecHash": "veh7w9huV5o2MsEt6mlhLdFk/lVDmcLKPA1WgWgTfvaSc+dgzkVYNB6jdPjqTXamnkejkXoJNAgxJWosubISPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\krashennikov_aa\\Desktop\\WordProcessor\\WordProcessor.Domain\\WordProcessor.Domain.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\krashennikov_aa\\.nuget\\packages\\readline\\2.0.1\\readline.2.0.1.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\MyProjects\\C#\\WordProcessor\\WordProcessor.Domain\\WordProcessor.Domain.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

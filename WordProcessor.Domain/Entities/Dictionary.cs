@@ -15,5 +15,6 @@ namespace WordProcessor.Domain.Entities
         [MaxLength(15)]
         [MinLength(3)]
         public string Word { get; set; }
+        public int Count { get; set; }
     }
 }

@@ -1,0 +1,12 @@
+C:\MyProjects\C#\WordProcessor\WordProcessor.Domain\bin\Debug\net7.0\WordProcessor.Domain.deps.json
+C:\MyProjects\C#\WordProcessor\WordProcessor.Domain\bin\Debug\net7.0\WordProcessor.Domain.dll
+C:\MyProjects\C#\WordProcessor\WordProcessor.Domain\bin\Debug\net7.0\WordProcessor.Domain.pdb
+C:\MyProjects\C#\WordProcessor\WordProcessor.Domain\obj\Debug\net7.0\WordProcessor.Domain.csproj.AssemblyReference.cache
+C:\MyProjects\C#\WordProcessor\WordProcessor.Domain\obj\Debug\net7.0\WordProcessor.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyProjects\C#\WordProcessor\WordProcessor.Domain\obj\Debug\net7.0\WordProcessor.Domain.AssemblyInfoInputs.cache
+C:\MyProjects\C#\WordProcessor\WordProcessor.Domain\obj\Debug\net7.0\WordProcessor.Domain.AssemblyInfo.cs
+C:\MyProjects\C#\WordProcessor\WordProcessor.Domain\obj\Debug\net7.0\WordProcessor.Domain.csproj.CoreCompileInputs.cache
+C:\MyProjects\C#\WordProcessor\WordProcessor.Domain\obj\Debug\net7.0\WordProcessor.Domain.dll
+C:\MyProjects\C#\WordProcessor\WordProcessor.Domain\obj\Debug\net7.0\refint\WordProcessor.Domain.dll
+C:\MyProjects\C#\WordProcessor\WordProcessor.Domain\obj\Debug\net7.0\WordProcessor.Domain.pdb
+C:\MyProjects\C#\WordProcessor\WordProcessor.Domain\obj\Debug\net7.0\ref\WordProcessor.Domain.dll

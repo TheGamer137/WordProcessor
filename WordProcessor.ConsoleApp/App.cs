@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Azure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,16 @@ namespace WordProcessor.ConsoleApp
         {
             if (!args.Any())
             {
-                ReadLine.Read();
+                while (Console.ReadKey().Key!=ConsoleKey.Escape && !string.IsNullOrWhiteSpace(Console.ReadLine()))
+                {
+                    var input = Console.ReadLine();
+                    var words = _repository.AutocompleteUserInput(input);
+                    foreach (var word in words)
+                    {
+                        Console.WriteLine("-{0}", word);
+                    }
+
+                }
             }
             else if (args.Length>0)
             {

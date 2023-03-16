@@ -7,7 +7,7 @@ using WordProcessor.Domain.Entities;
 
 namespace WordProcessor.Domain.Repository
 {
-    public interface IDictionaryRepository: IAutoCompleteHandler
+    public interface IDictionaryRepository
     {
         /// <summary>
         /// Метод считывает слова в файле
@@ -33,6 +33,19 @@ namespace WordProcessor.Domain.Repository
         /// </summary>
         void ClearDictionary();
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="args">команды</param>
         void DictionaryCommands(string[] args);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="word"></param>
+        /// <returns></returns>
+        string[] AutocompleteUserInput(string word);
+
+        void SaveWords(string filePath);
     }
 }

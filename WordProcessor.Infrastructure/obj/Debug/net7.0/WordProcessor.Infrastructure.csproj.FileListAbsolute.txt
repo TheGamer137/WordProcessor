@@ -1,0 +1,17 @@
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\bin\Debug\net7.0\WordProcessor.Infrastructure.deps.json
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\bin\Debug\net7.0\WordProcessor.Infrastructure.runtimeconfig.json
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\bin\Debug\net7.0\WordProcessor.Infrastructure.dll
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\bin\Debug\net7.0\WordProcessor.Infrastructure.pdb
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\bin\Debug\net7.0\WordProcessor.Domain.dll
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\bin\Debug\net7.0\WordProcessor.Domain.pdb
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\obj\Debug\net7.0\WordProcessor.Infrastructure.csproj.AssemblyReference.cache
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\obj\Debug\net7.0\WordProcessor.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\obj\Debug\net7.0\WordProcessor.Infrastructure.AssemblyInfoInputs.cache
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\obj\Debug\net7.0\WordProcessor.Infrastructure.AssemblyInfo.cs
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\obj\Debug\net7.0\WordProcessor.Infrastructure.csproj.CoreCompileInputs.cache
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\obj\Debug\net7.0\WordProcessor.Infrastructure.csproj.CopyComplete
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\obj\Debug\net7.0\WordProcessor.Infrastructure.dll
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\obj\Debug\net7.0\refint\WordProcessor.Infrastructure.dll
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\obj\Debug\net7.0\WordProcessor.Infrastructure.pdb
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\obj\Debug\net7.0\WordProcessor.Infrastructure.genruntimeconfig.cache
+C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\obj\Debug\net7.0\ref\WordProcessor.Infrastructure.dll

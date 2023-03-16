@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WordProcessor.Infrastructure
-build_property.ProjectDir = C:\Users\krashennikov_aa\Desktop\WordProcessor\WordProcessor.Infrastructure\
+build_property.ProjectDir = C:\MyProjects\C#\WordProcessor\WordProcessor.Infrastructure\

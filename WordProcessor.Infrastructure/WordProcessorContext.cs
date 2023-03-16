@@ -10,10 +10,7 @@ namespace WordProcessor.Infrastructure
 {
     public class WordProcessorContext:DbContext
     {
+        public WordProcessorContext(DbContextOptions<WordProcessorContext> options) : base(options) { }
         public DbSet<Dictionary> Dictionaries { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("MS SQLServerConnectionString");
-        }
     }
 }

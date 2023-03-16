@@ -2,6 +2,7 @@
 using WordProcessor.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Text;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace WordProcessor.Infrastructure.Repository
 {
@@ -20,27 +21,50 @@ namespace WordProcessor.Infrastructure.Repository
             {
                 char[] delimiters = { ' ', '.', ',', ':', '!', '?', ';', '\n', '\t', '\r', '-', '"', '«', '»', '\'', '-' };
                 
-                return File.ReadAllText(filePath, Encoding.UTF8).Split(delimiters, StringSplitOptions.RemoveEmptyEntries)
+                return File.ReadAllText(filePath, Encoding.UTF8)
+                    .Split(delimiters, StringSplitOptions.RemoveEmptyEntries)
                     .GroupBy(g => g.ToLower())
-                    .ToDictionary(g => g.Key, z => z.Count())
-                    .Where(g => g.Value >= 3)
-                    .Select(d => new Dictionary()
+                    .Select(d => new Dictionary
                     {
-                        Word = d.Key
-                    });
-                
+                        Word = d.Key,
+                        Count = d.Count()
+                    })
+                    .Where(d => d.Count >= 3);
+
+
             }
-            throw new Exception(string.Format("Файл {0} не найден!", filePath));
+            throw new Exception(string.Format("Файл не найден!", filePath));
         }
 
         public void CreateDictionary(string filePath)
         {
             if (_context.Dictionaries.Any())
             {
-                
+                ConsoleKey response;
+                do
+                {
+                    Console.Write("Словарь уже создан, вы уверены что хотите создать новый словарь? [y/n]");
+                    response = Console.ReadKey(false).Key;
+                    if (response != ConsoleKey.Enter)
+                    {
+                        Console.WriteLine();
+                    }
+                    if(response==ConsoleKey.Y)
+                    {
+                        ClearDictionary();
+                        SaveWords(filePath);
+                    }
+                    if(response==ConsoleKey.N)
+                    {
+                        Console.ReadLine();
+                    }
+                } while (response != ConsoleKey.Y && response != ConsoleKey.N);
             }
-            _context.Dictionaries.AddRange(GetWordsFromFile(filePath));
-            _context.SaveChanges();
+            else
+            {
+                SaveWords(filePath);
+            }
+
         }
 
         public void ClearDictionary()
@@ -94,15 +118,28 @@ namespace WordProcessor.Infrastructure.Repository
                 }
                 else
                 {
-                    _context.Dictionaries.Update(word);
+                    word.Count += w.Count;
                 }
             }
             _context.SaveChanges();
         }
 
-        public string[] GetSuggestions(string text, int index)
+        public string[] AutocompleteUserInput(string word)
         {
-            return _context.Dictionaries.Select(d => d.Word).ToArray();
+            word = word.ToLower();
+            return _context.Dictionaries
+                      .Where(k => k.Word.StartsWith(word))
+                      .OrderByDescending(b => b.Count)
+                      .ThenBy(c => c.Word)
+                      .Take(5)
+                      .Select(a => a.Word)
+                      .ToArray();
+        }
+
+        public void SaveWords(string filePath)
+        {
+            _context.Dictionaries.AddRange(GetWordsFromFile(filePath));
+            _context.SaveChanges();
         }
     }
 }
