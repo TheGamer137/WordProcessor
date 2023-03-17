@@ -1,5 +1,8 @@
 # WordProcessor
 Тестовое задание ПромИТ
+## Перед запуском:
+1. Вставить свою строку подключения
+2. Через PM Manager ввести команду Update-Database
 ### Технологии:
 * ASP.NET
 * Entity Framework Core
